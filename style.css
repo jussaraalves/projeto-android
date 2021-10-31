@@ -37,7 +37,7 @@ a.externo::after{
 
 header{
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
-    padding: 30px;
+    padding: 31px;
     text-align: center;
     min-height: 150px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.404);
@@ -78,6 +78,7 @@ nav a{
     border-radius: 5px;
     padding: 5px;
     transition-duration: .5s; 
+    
 }
 
 nav a:hover{
@@ -111,7 +112,6 @@ main h2{
     background-image: linear-gradient(to right, var(--cor1), transparent);
     padding-left: 5px;
     
-
 }
 
 main p{
@@ -168,14 +168,12 @@ section.video > iframe{
 }
 
 aside{
-
     background-color: var(--cor1);
     padding: 0px 10px;
     border-radius: 5px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.336);
     margin-top: 20px;
-    margin-bottom: 5px;
-    
+    margin-bottom: 5px;   
     
 }
 
@@ -193,13 +191,6 @@ aside > ul{
     list-style-type: "\2714\00A0\00A0";
     list-style-position: inside;
     columns: 2;
-}
-
-@media (max-width: 500px){
-    aside > ul{
-        columns: 1;
-        line-height: 1.6em;
-    }
 }
 
 .extra{
@@ -225,3 +216,19 @@ footer a:hover{
     text-decoration: underline;
 }
 
+@media (max-width: 500px){
+    nav a{
+        display: block;
+        line-height: 1.8em;
+       
+    }
+
+    main h1{
+        font-size: 1.6em;
+    }
+    
+    aside > ul{
+        columns: 1;
+        line-height: 1.6em;
+    }
+}
